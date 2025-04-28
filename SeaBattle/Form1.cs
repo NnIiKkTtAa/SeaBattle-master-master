@@ -130,7 +130,6 @@ namespace SeaBattle
             PictureBox picture = sender as PictureBox;
             int row = Convert.ToInt32(picture.Name[10].ToString());
             int col = Convert.ToInt32(picture.Name[11].ToString());
-            //индекс находится в не границ массива 
             int shipLength = ships[count];
 
             // Проверка на выход за границы
@@ -154,8 +153,7 @@ namespace SeaBattle
         {
             PictureBox picture = sender as PictureBox;
             int row = Convert.ToInt32(picture.Name[10].ToString());
-            int col = Convert.ToInt32(picture.Name[11].ToString());
-            //индекс находился вне границ массива. Исключение не обработано
+            int col = Convert.ToInt32(picture.Name[11].ToString());            
             int shipLength = ships[count];
 
             // Проверка на выход за границы
